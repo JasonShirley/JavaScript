@@ -7,6 +7,13 @@
 // @require  https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js
 // @run-at      document-idle
 // ==/UserScript==
+
+/*
+ * TODO:
+ * Clean up script so that only tables with images are selected. Current method utilizes hardcoded variable.
+ * Add error handling.
+ * Add checks to see if images need to be saved.
+*/
 var tables = document.querySelectorAll("table:not(.wikitable)");  // get all HTML tables on a webpage
 
 var imageJSON = {}; // images to save
